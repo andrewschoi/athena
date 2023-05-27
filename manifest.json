@@ -12,8 +12,9 @@
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
-      "matches": ["https://*/*", "http://*/*"]
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["scripts/content.ts"]
     }
   ]
 }
